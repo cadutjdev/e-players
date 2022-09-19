@@ -102,6 +102,10 @@ header{
 
 }
 
+.secao-cards{
+    display: flex;
+}
+
 .card{
     width: 215px;
 }
