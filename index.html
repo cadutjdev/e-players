@@ -14,15 +14,15 @@
     <h1>Home - E-Players</h1>
     <header>
         <div class="container_grid cabecalho_alinhamento svg">
-            <a href=""><img src="./img/logo.png" alt="logo do site Riot Games"></a>
-            <nav class="menu">
+            <a href=""><img class="logo" src="./img/logo.png" alt="logo do site Riot Games"></a>
+            <nav id="menu" class="menu">
                 <a href="">Início</a>
                 <a href="">Horários</a>
                 <a href="">Campeonatos</a>
                 <a href="">Resultados</a>
                 <a href="">Notícias</a>
             </nav>
-            <a class="barras" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+            <a onclick="mostrarMenu()" class="barras" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
         </div>
     </header>
     <section class="banner">
@@ -107,6 +107,22 @@
             </div>
         </div>
     </section>
+
+    <script>
+        let menu = document.getElementById("menu");
+
+        function mostrarMenu(){
+
+            if(window.getComputedStyle(menu).display != "flex"){
+                menu.style.display = "flex"
+            }else{
+                menu.style.display = "none"
+            }
+
+            event.preventDefault();
+        }
+
+    </script>
 
 </body>
 </html>
