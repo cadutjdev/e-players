@@ -48,6 +48,16 @@ header{
     scale: 1.1;
 }
 
+/*para trocar cor de arquivo svg tem que colocar o link(código) e atributo fill no css*/
+.cabecalho_alinhamento svg{
+    width: 30px;
+    fill: #ffffff;
+    
+.barras{
+    display: none;
+}
+}
+
 .banner{
     background-image: url(../img/ImagemBanner.png);
     height: 600px;
