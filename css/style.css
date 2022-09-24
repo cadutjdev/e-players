@@ -146,8 +146,15 @@ h2{
 }
 
 @media screen and (max-width: 768px){
-    .menu a{
+    .cabecalho_alinhamento{
+        position: relative;
+    }
+    .menu{
         display:none;
+        flex-direction: column;
+        width: 150px;
+        position: absolute;
+        right: 50px;
    } 
    .barras{
     display: flex;
