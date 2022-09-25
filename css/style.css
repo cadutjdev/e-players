@@ -133,6 +133,22 @@ h2{
     box-shadow: 0 0 30px rgb(5, 0, 0);
     background: linear-gradient(360deg, rgba(1,0,15,1) 0%, rgba(182,182,182,1) 100%);
     color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: #C31616;
+    padding: 7px 38px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 15px;
+    text-align: center;
+}
+
+.card *:not(:first-child){
+    margin: 5px 10px;
 }
 
 @media screen and (max-width: 1200px) {
