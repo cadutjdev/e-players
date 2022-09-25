@@ -154,8 +154,19 @@ h2{
         flex-direction: column;
         width: 150px;
         position: absolute;
-        right: 50px;
+        right: 0px;
+        top: 70px;
+        background-color: #000000dd;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px black;
    } 
+
+   .menu a{
+
+    margin: 5px;
+    text-align: end;
+   }
    .barras{
     display: flex;
    }
