@@ -151,6 +151,46 @@ h2{
     margin: 5px 10px;
 }
 
+footer{
+    background-color: #010101;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links_footer{
+    display: flex;
+}
+
+.rodape *{
+    /*flex: 1;*/
+}
+
+.links_footer a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif; 
+
+}
+
+footer .box_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_logo .logo{
+    height: 30px;
+}
+
+.info_contato{
+    color: #ffffff;
+}
+
+
 @media screen and (max-width: 1200px) {
     .menu{
     width: 550px;
