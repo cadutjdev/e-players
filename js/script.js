@@ -10,3 +10,6 @@ let menu = document.getElementById("menu");
 
             event.preventDefault();
         }
+        function renderizarProdutos(){
+            
+        }
