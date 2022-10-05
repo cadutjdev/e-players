@@ -164,9 +164,9 @@ footer{
     display: flex;
 }
 
-.rodape *{
-    /*flex: 1;*/
-}
+/* .rodape *{
+    /*flex: 1;
+} */
 
 .links_footer a{
     color: #ffffff;

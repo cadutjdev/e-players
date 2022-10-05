@@ -19,7 +19,7 @@ let menu = document.getElementById("menu");
                     nome: "Mouse Gamer",
                     imagem: "./img/T1 1.png",
                     descricao: "Esse mouse tem 10000dpi e controle DPI",
-                    preco: 159.00
+                    preco: 159.90
                 },
                 {
                     nome: "Teclado Mecânico Gamer RGb",
@@ -31,7 +31,7 @@ let menu = document.getElementById("menu");
                     nome: "Headset Gamer RGB",
                     imagem: "./img/T1 1.png",
                     descricao: "Esse headset possui microfene integrado de alta qualidade",
-                    preco: 199.00
+                    preco: 199.50
                 },
                 {
                     nome: "Mouse Pad Gamer RGB",
@@ -70,12 +70,14 @@ let menu = document.getElementById("menu");
             for(let index = 0; index < listaProdutos.length; index++){
                 template = template + `
                 <div class="card">
-                    <img src="./img/T1 1.png" alt="">
-                    <h3>Título do Jogo</h3>
-                    <p>Descrição do Jogo</p>
-                    <p>R$ 100,00</p>
+                    <img src="${listaProdutos[index].imagem}" alt="">
+                    <h3>${listaProdutos[index].nome}</h3>
+                    <p>${listaProdutos[index].descricao}</p>
+                    <p>R$ ${listaProdutos[index].preco}</p>
                     <a href="">Comprar</a>
                 </div>
                 `
             }
+
+            secaoProdutos.innerHTML = template
         }
