@@ -81,3 +81,14 @@ let menu = document.getElementById("menu");
 
             secaoProdutos.innerHTML = template
         }
+
+        $(document).ready(function(){
+
+            let listaSlides = ["banner-f1", "banner-cs", "banner-lol"]
+
+            function mudarSlide() {
+
+            }
+
+            setInterval(mudarSlide, 2000)
+        })
