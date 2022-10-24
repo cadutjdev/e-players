@@ -82,11 +82,33 @@ let menu = document.getElementById("menu");
             secaoProdutos.innerHTML = template
         }
 
+        //funcao jquery para banner rotativo
+
         $(document).ready(function(){
 
             let listaSlides = ["banner-f1", "banner-cs", "banner-lol"]
+            let slideAtual = 1
 
             function mudarSlide() {
+                console.log(slideAtual)
+
+                //remode o slide anterior
+                if(slideAtual > 0){
+                    $(".banner").removeClass(listaSlides[slideAtual - 1])
+                } else {
+                    $(".banner").removeClass(listaSlides[(listaSlides.length - 1)])
+                }
+                
+
+                //Mostra o slide atula da lista de slides
+                $(".banner").addClass(listaSlides[slideAtual])
+
+                //incrementa a variavel slideAtual
+                slideAtual++
+
+                if (slideAtual > (listaSlides.length - 1)) {
+                    slideAtual= 0
+                }
 
             }
 
