@@ -59,9 +59,20 @@ header{
 }
 
 .banner{
-    background-image: url(../img/ImagemBanner.png);
     height: 600px;
     background-size: cover;
+}
+
+.banner-f1{
+    background-image: url(../img/ImagemBanner.png);
+}
+
+.banner-cs{
+    background-image: url(../img/ImagemBanner.png);
+}
+
+.banner-lol{
+    background-image: url(../img/ImagemBanner.png);
 }
 
 .posicao_texto{
