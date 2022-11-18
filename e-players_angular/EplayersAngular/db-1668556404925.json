@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "email": "cadutj@email.com",
       "password": "batatinhafrita123",
@@ -10,3 +10,4 @@
   ],
   "produtos": []
 }
+
