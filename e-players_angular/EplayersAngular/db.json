@@ -1,6 +1,11 @@
 {
   "users": [
-
+    {
+      "email": "cadutj@email.com",
+      "password": "$2a$10$1sARwYhGmzG/4vg5/2e/t.XyuRYLpeKltflXARcGE3lqFSFngCq6u",
+      "name": "Carlos",
+      "id": 1
+    }
   ],
   "produtos": []
 }
