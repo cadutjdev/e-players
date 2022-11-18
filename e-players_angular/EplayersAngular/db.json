@@ -1,12 +1,6 @@
 {
   "users": [
-    {
-      "email": "cadutj@email.com",
-      "password": "batatinhafrita123",
-      "nome": "Carlos",
-      "Idade": 40,
-      "id": 1
-    }
+
   ],
   "produtos": []
 }
