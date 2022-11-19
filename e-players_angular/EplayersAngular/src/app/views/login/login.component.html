@@ -13,6 +13,7 @@
       <input id="botao-enviar" type="submit" value="Fazer Login">
       <!-- <button type="submit">Enviar</button> -->
   </form>
+  <p id="msgErro" *ngIf="mensagem != '' "> {{mensagem}}</p>
   <a routerLink="">Home</a>
 </main>
 

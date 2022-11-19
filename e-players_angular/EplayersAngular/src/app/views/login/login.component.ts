@@ -17,14 +17,24 @@ export class LoginComponent implements OnInit {
 
   userModel = new User();
 
+  mensagem = "";
+
   receberDados(){
       this.loginService.login(this.userModel).subscribe({
       next: (response) => {
         console.log(response.body.user.name)
         localStorage.setItem("nomeUsuario", response.body.user.name)
         this.router.navigateByUrl("/")
-      }, error: () => {
-        console.log();
+      }, error: (msgErro) => {
+        console.log(msgErro.error);
+        this.mensagem = msgErro.error
+        //alert(msgErro.error)
+
+        if (msgErro.error == "Password is too short") {
+          this.mensagem = "Senha muito curta";
+        }else{
+          this.mensagem = msgErro.error
+        }
       }
     })
   }
