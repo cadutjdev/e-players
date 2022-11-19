@@ -20,8 +20,9 @@ export class LoginComponent implements OnInit {
   receberDados(){
       this.loginService.login(this.userModel).subscribe({
       next: (response) => {
-        console.log(response)
-      this.router.navigateByUrl("/")
+        console.log(response.body.user.name)
+        localStorage.setItem("nomeUsuario", response.body.user.name)
+        this.router.navigateByUrl("/")
       }
     })
   }

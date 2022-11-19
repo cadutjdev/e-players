@@ -9,6 +9,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+    usuario: any = ''
+
   ngOnInit(): void {
     this.renderizarProdutos()
   }
